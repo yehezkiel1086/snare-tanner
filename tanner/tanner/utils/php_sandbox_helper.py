@@ -22,7 +22,7 @@ class PHPSandboxHelper:
         )
 
         try:
-            async with aiohttp.ClientSession(loop=self._loop) as session:
+            async with aiohttp.ClientSession() as session:
                 async with session.post(phpox_address, data=code) as resp:
                     result = await resp.json()
         except aiohttp.ClientError as client_error:
