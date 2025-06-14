@@ -1,7 +1,0 @@
-name: "Snare CodeQL config"
-
-paths:
-  - bin
-  - snare
-paths-ignore:
-  - snare/tests
